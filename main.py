@@ -2,6 +2,10 @@ from flask import Flask
 
 app = Flask(__name__)
 
+@app.route("/email")
+def about():
+    return "<p>Email Me!</p>"
+
 @app.route("/about")
 def about():
     return "<p>About Me!</p>"
